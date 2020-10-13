@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Darker Grotesque', sans-serif;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#main-nav {
+  background-color: rgb(32, 104, 224);
+  margin-bottom: 20px;
+}
+
+#main-nav h1, #main-nav h1 a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+#main-nav, .container {
+  display: grid;
+  grid-template-columns: 100px  auto 100px;
+}
+
+#main-nav .container {
+  display: grid;
+  grid-column-start: 2;
+  grid-template-columns: 49% 49%;
+  column-gap: 2%;
+}
+
+#title {
+  grid-column-start: 1;
+}
+
+.search {
+  display: grid;
+  justify-self: stretch;
+  align-self: center;
+}
+
+#searchbox {
+  justify-self: stretch;
+  text-align: right;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+#pokedex {
+  display: grid;
+  grid-column-start: 2;
+  grid-template-columns: 32% 32% 32%;
+  column-gap: 2%;
+  row-gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+#pokedex li {
+  list-style: none;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+#pokedex li a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(80, 80, 80) 1px 1px 1px;
+  text-decoration: none;
+}
+
+#pokedex li a div {
+  background-color: rgb(248, 200, 80);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: block;
+  height: 50px;
+  font-weight: 900;
+  padding: 10px;
+}
+
+#pokedex li a div span {
+  font-size: 1.5em;
+}
+
+#pokedex li a div h2 {
+  float: right;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+#pokedex li a img {
+  display: block;
+  margin: 10px auto;
+  width: 120px;
+  height: 120px;
+}
+
+#content {
+  grid-column-start: 2;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+#card {
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+#card span {
+  background-color: rgb(248, 200, 80);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: block;
+  height: 50px;
+  font-weight: 900;
+  padding: 10px;
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(80, 80, 80) 1px 1px 1px;
+}
+
+#card h2 {
+  float: right;
+  margin: 0;
+  text-transform: capitalize;
+  font-size: inherit;
+}
+
+#card img {
+  display: block;
+  margin: 10px auto;
+  width: 120px;
+  height: 120px;
+}
+
+#details {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgb(128, 216, 136);
+  margin: 50px 0;
+  font-size: 1.2em;
+}
+
+#details p {
+  padding: 15px 30px;
+  margin: 0;
+}
+
+#details p:nth-child(2n){
+  background-color: rgb(112, 184, 112);
+}
